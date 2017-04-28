@@ -50,32 +50,32 @@ public class Mouse_Simulation
    }
     
    //wait for some time before proceeding to next method call
-   public void wait(int t)
+   public void waitTime(int t)
    {
       System.Threading.Thread.Sleep(t);
    }
 
    // shortkey alt with combinations
-   public void alt_with(params string[] keys)
+   public void altWith(params string[] keys)
    {
-      shortcut_with("%", keys);
+      shortcutWith("%", keys);
    }
 
    // shortkey shift with combinations
-   public void shift_with(params string[] keys)
+   public void shiftWith(params string[] keys)
    {
-      shortcut_with("+", keys);
+      shortcutWith("+", keys);
    }
 
    // shortkey ctrl with combinations
-   public void ctrl_with(params string[] keys)
+   public void ctrlWith(params string[] keys)
    {
-      shortcut_with("^", keys);
+      shortcutWith("^", keys);
    }   
 
    // shortkey combination with any keys.
    // check look-up table for shortcut keys at end of file 
-   public void shortcut_with(params string shortcuts, params string[] keys)
+   public void shortcutWith(params string shortcuts, params string[] keys)
    {
       string send_keys = "";
       string shortcut_keys = "";
